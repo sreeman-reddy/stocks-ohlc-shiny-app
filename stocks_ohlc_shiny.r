@@ -38,7 +38,7 @@ server <- function(input, output) {
     }
     else {output$error <- renderText("")}
     
-    api_key <- "D1OSE84R1RQ98JMP"   #limit: 25 API calls per day
+    api_key <- "insert_your_api_key"   #limit: 25 API calls per day
     #examples used for debugging: https://www.alphavantage.co/documentation/
     stock_search <- content(GET(paste0("https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=",
                                        input$stock_symbol,
